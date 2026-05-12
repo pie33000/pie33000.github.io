@@ -1,0 +1,32 @@
+title: "Pierrick Rugery"
+description: "AI and robotics researcher"
+url: "https://pie33000.github.io"
+baseurl: ""
+repository: "pie33000/pie33000.github.io"
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Collections / blog
+permalink: /blog/:year/:month/:day/:title/
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Defaults
+defaults:
+  - scope:
+      path: "blog/_posts"
+      type: "posts"
+    values:
+      layout: "post"

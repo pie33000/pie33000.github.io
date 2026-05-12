@@ -1,0 +1,269 @@
+/* ─── Reset & base ─────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+a:hover {
+  color: #f09228;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 0.75em;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Page wrapper ─────────────────────────────────────────── */
+table.page-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table.page-table > tbody > tr > td {
+  padding: 2.5rem 1rem;
+}
+
+/* ─── Header (bio + photo) ─────────────────────────────────── */
+table.header-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+td.bio-cell {
+  width: 67%;
+  vertical-align: middle;
+  padding-right: 1.5rem;
+}
+
+td.photo-cell {
+  width: 33%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.links {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+img.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e8e8e8;
+}
+
+/* ─── Section headings ─────────────────────────────────────── */
+table.section-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+td.section-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+table.section-table td {
+  padding-top: 0.6rem;
+}
+
+/* ─── Papers / Projects table ──────────────────────────────── */
+table.papers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+tr.paper-row {
+  border-bottom: 1px solid #f0f0f0;
+}
+tr.paper-row:last-child {
+  border-bottom: none;
+}
+
+td.paper-thumb-cell {
+  width: 160px;
+  min-width: 120px;
+  vertical-align: top;
+  padding: 0.75rem 1rem 0.75rem 0;
+}
+
+img.paper-thumb {
+  width: 140px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  /* gray placeholder until real thumbnails are added */
+  background: #e8e8e8;
+}
+
+td.paper-info-cell {
+  vertical-align: top;
+  padding: 0.75rem 0;
+}
+
+.paper-title {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.paper-title a {
+  color: #222;
+}
+.paper-title a:hover {
+  color: #1772d0;
+}
+
+.paper-authors {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.15rem;
+}
+
+.paper-venue {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+.paper-links {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.paper-blurb {
+  font-size: 0.88rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* ─── Teaching table ───────────────────────────────────────── */
+table.teaching-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+}
+
+table.teaching-table th {
+  text-align: left;
+  font-weight: 600;
+  padding: 0.3rem 0.5rem 0.3rem 0;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+table.teaching-table td {
+  padding: 0.35rem 0.5rem 0.35rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #444;
+}
+
+/* ─── Footer ───────────────────────────────────────────────── */
+table.footer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+table.footer-table td {
+  padding-top: 0.75rem;
+  font-size: 0.82rem;
+  color: #888;
+  text-align: center;
+}
+
+table.footer-table a {
+  color: #888;
+}
+table.footer-table a:hover {
+  color: #1772d0;
+}
+
+/* ─── Mobile ───────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  table.page-table > tbody > tr > td {
+    padding: 1.5rem 0.75rem;
+  }
+
+  /* Stack photo above bio */
+  table.header-table,
+  table.header-table tbody,
+  table.header-table tr {
+    display: block;
+  }
+
+  td.photo-cell {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  td.bio-cell {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  /* Stack paper thumb above text */
+  table.papers-table,
+  table.papers-table tbody,
+  tr.paper-row {
+    display: block;
+  }
+
+  td.paper-thumb-cell {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0 0.4rem 0;
+  }
+
+  img.paper-thumb {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+  }
+
+  td.paper-info-cell {
+    display: block;
+    width: 100%;
+    padding-top: 0.4rem;
+  }
+}
